@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /* 1. Write a JavaScript program that accept two integers and
+ * display the larger.Go to the editor */
+/******* Start Your Code *********/
+  
+let x = prompt( 'enter the first number');
+let y = prompt('enter the second number');
+if(x>y){
+    document.write(`x =${x} is biiger than y `);
+} else
+{
+    document.write(`y =${y} is biiger than x `);
+}
+
+
+
+ /******* End Your Code ********* */
+
+/* 2. Write a JavaScript conditional statement to find the sign
+ of product of three numbers. Display an alert box with the 
+ specified sign. Go to the editor 
+Sample numbers : 3, -7, 2 
+Output : The sign is - */
+/******* Start Your Code *********/
+let fnumber=4;
+let snumber = -3;
+let third_number = 6;
+let result= fnumber * snumber * third_number;
+if(result>0){
+    alert('the sign is -');
+
+}else
+{
+    alert('the sign is -');
+}
+
+
+
+/* 3. Write a JavaScript conditional statement to sort three numbers. Display an alert box to show the result. Go to the editor 
+Sample numbers : 0, -1, 4 
+Output : 4, 0, -1 */
+/******* Start Your Code *********/
+  
+let sort_number1 = 0;
+let sort_number2 = -1;
+let sort_number3 = 4;
+let big_num;
+let sec_num;
+let last_num;
+// if( sort_number1 > sort_number2 && sort_number1 > sort_number3 && sort_number2>sort_number3)
+// {
+//     document.write(` output :  ${sort_number1} , ${sort_number2}, ${sort_number3}`);
+// } else if(sort_number2 > sort_number1 && sort_number2 > sort_number3 && sort_number1>sort_number3)
+// { document.write(` output :  ${sort_number2} , ${sort_number1}, ${sort_number3}`)
+// }else if( sort_number2 > sort_number1 && sort_number2 > sort_number3 && sort_number3>sort_number1)
+// {
+//     document.write(` output :  ${sort_number3} , ${sort_number3}, ${sort_number1}`)
+// }else
+// {}
+if(sort_number1 > sort_number2 && sort_number1 > sort_number3)
+{
+    big_num = sort_number1;
+    if (sort_number2>sort_number3) {
+        sec_num= sort_number2;
+        last_num= sort_number3;
+        
+    }else
+    {
+        sec_num= sort_number3;
+        last_num= sort_number2;
+    }
+}else if( sort_number2>sort_number1 && sort_number2>sort_number3)
+{
+    big_num = sort_number2;
+    if (sort_number1>sort_number3) {
+        sec_num= sort_number1;
+        last_num= sort_number3;
+        
+    }else
+    {
+        sec_num= sort_number3;
+        last_num= sort_number1;
+    }
+
+}else 
+{
+    big_num = sort_number3;
+    
+    if(sort_number1>sort_number2)
+    {  
+        sec_num= sort_number1;
+        last_num= sort_number2;
+    }else{
+        sec_num= sort_number2;
+        last_num= sort_number1;
+    }
+
+
+
+}
+document.write(`output: ${big_num}, ${sec_num}, ${last_num}`);
+    
+alert(`output: ${big_num}, ${sec_num}, ${last_num}`);
+ 
+
+
+ /******* End Your Code ********* */
+
+
+
+  
+    </script>
+    
+</body>
+</html>
