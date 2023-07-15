@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <script>
+const arryname=['sawsan','ali','mohammed','mustafa']
+const arrayage=[27,28,31,37];
+for(let i=0;i<arryname.length;i++){
+ let container = document.createElement('div');
+ let name = document.createElement('h1')
+ let age = document.createElement('h3')
+ let image = document.createElement('img')
+   
+ //انشاء المحتوى
+  let name_value = document.createTextNode(arryname[i]);
+  let age_value = document.createTextNode(arrayage[i]);
+  image.src='../Picture/con2.jpg';
+
+  image.style.width='100px';
+  image.style.height='100px';
+
+  //اضافة المحتوى
+ name.appendChild(name_value);
+age.appendChild(age_value);
+
+container.appendChild(name);
+container.appendChild(age);
+container.appendChild(image);
+
+document.body.appendChild(container);
+
+container.style.border='solid 2px black';
+container.style.margin = '20px';
+container.style.textAlign = 'center';
+container.style.width = '300px';
+container.style.display = 'inline-block'
+                    
+
+console.log(container)
+}
+    </script>
+</body>
+</html>

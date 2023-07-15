@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select>
+        <option value="jordan">jordan</option>
+        <option value="plastine" id="pals">palastine</option>
+        
+    </select>
+    <br>
+    <img src="../Picture/jordan.png" onclick="slected_function(this);
+    ">
+    <script>
+
+ function slected_function(p){
+    p.src='../Picture/palestine.png'
+    document.getElementById('pals').setAttribute('selected','selected')
+ }
+    </script>
+</body>
+</html>
